@@ -1,80 +1,86 @@
 :root {
   --oui-font-family: 'Manrope', sans-serif;
+  --oui-font-size-base: 16px;
 
-  /* colors */
-  --oui-color-primary: 176 132 233;
-  --oui-color-primary-light: 213 190 244;
-  --oui-color-primary-darken: 137 76 209;
-  --oui-color-primary-contrast: 255 255 255;
+  /* brand – warm beige on near-black */
+  --oui-color-primary: 232 200 165;        /* #E8C8A5 */
+  --oui-color-primary-light: 245 222 199;  /* #F5DEC7 */
+  --oui-color-primary-darken: 204 164 118; /* #CCA476 */
+  --oui-color-primary-contrast: 15 14 12;  /* dark text on beige */
 
-  --oui-color-link: 189 107 237;
-  --oui-color-link-light: 217 152 250;
+  --oui-color-link: 232 200 165;
+  --oui-color-link-light: 245 222 199;
 
-  --oui-color-secondary: 255 255 255;
-  --oui-color-tertiary: 218 218 218;
-  --oui-color-quaternary: 218 218 218;
+  /* neutrals */
+  --oui-color-secondary: 232 200 165;      /* use beige accents */
+  --oui-color-tertiary: 82 74 64;          /* muted warm gray */
+  --oui-color-quaternary: 62 56 48;        /* deeper warm gray */
 
-  --oui-color-danger: 245 97 139;
-  --oui-color-danger-light: 250 167 188;
-  --oui-color-danger-darken: 237 72 122;
+  /* semantic (kept distinct, slightly muted to fit palette) */
+  --oui-color-danger: 205 84 93;           /* soft crimson */
+  --oui-color-danger-light: 232 144 152;
+  --oui-color-danger-darken: 170 57 66;
   --oui-color-danger-contrast: 255 255 255;
 
-  --oui-color-success: 41 233 169;
-  --oui-color-success-light: 101 240 194;
-  --oui-color-success-darken: 0 161 120;
+  --oui-color-success: 74 180 140;         /* muted teal-green */
+  --oui-color-success-light: 122 206 174;
+  --oui-color-success-darken: 36 120 95;
   --oui-color-success-contrast: 255 255 255;
 
-  --oui-color-warning: 255 209 70;
-  --oui-color-warning-light: 255 229 133;
-  --oui-color-warning-darken: 255 152 0;
-  --oui-color-warning-contrast: 255 255 255;
+  --oui-color-warning: 219 178 104;        /* warm amber */
+  --oui-color-warning-light: 236 206 155;
+  --oui-color-warning-darken: 178 133 58;
+  --oui-color-warning-contrast: 15 14 12;
 
-  --oui-color-fill: 36 32 47;
-  --oui-color-fill-active: 40 46 58;
+  /* surfaces */
+  --oui-color-fill: 12 11 14;              /* near-black background */
+  --oui-color-fill-active: 20 18 24;
 
-  --oui-color-base-1: 93 83 123;
-  --oui-color-base-2: 81 72 107;
-  --oui-color-base-3: 68 61 69;
-  --oui-color-base-4: 57 52 74;
-  --oui-color-base-5: 51 46 66;
-  --oui-color-base-6: 43 38 56;
-  --oui-color-base-7: 36 32 47;
-  --oui-color-base-8: 29 26 38;
-  --oui-color-base-9: 22 20 28;
-  --oui-color-base-10: 14 13 18;
+  /* warm, low-chroma base scale (light → dark) */
+  --oui-color-base-1: 210 192 167;
+  --oui-color-base-2: 190 172 149;
+  --oui-color-base-3: 150 136 118;
+  --oui-color-base-4: 120 109 95;
+  --oui-color-base-5: 98  88  77;
+  --oui-color-base-6: 82  74  64;
+  --oui-color-base-7: 62  56  48;
+  --oui-color-base-8: 44  40  35;
+  --oui-color-base-9: 28  26  23;
+  --oui-color-base-10: 15 14 12;
 
-  --oui-color-base-foreground: 255 255 255;
-  --oui-color-line: 255 255 255;
+  --oui-color-base-foreground: 232 200 165; /* beige text on dark */
+  --oui-color-line: 82 74 64;               /* subtle warm divider */
 
-  --oui-color-trading-loss: 245 97 139;
+  /* trading (aliases) */
+  --oui-color-trading-loss: 205 84 93;
   --oui-color-trading-loss-contrast: 255 255 255;
-  --oui-color-trading-profit: 41 233 169;
+  --oui-color-trading-profit: 74 180 140;
   --oui-color-trading-profit-contrast: 255 255 255;
 
-  /* gradients */
-  --oui-gradient-primary-start: 40 0 97;
-  --oui-gradient-primary-end: 189 107 237;
+  /* gradients – gentle beige tints */
+  --oui-gradient-primary-start: 204 164 118;
+  --oui-gradient-primary-end: 245 222 199;
 
-  --oui-gradient-secondary-start: 81 42 121;
-  --oui-gradient-secondary-end: 176 132 233;
+  --oui-gradient-secondary-start: 62 56 48;
+  --oui-gradient-secondary-end: 120 109 95;
 
-  --oui-gradient-success-start: 1 83 68;
-  --oui-gradient-success-end: 41 223 169;
+  --oui-gradient-success-start: 36 120 95;
+  --oui-gradient-success-end: 122 206 174;
 
-  --oui-gradient-danger-start: 153 24 76;
-  --oui-gradient-danger-end: 245 97 139;
+  --oui-gradient-danger-start: 170 57 66;
+  --oui-gradient-danger-end: 232 144 152;
 
-  --oui-gradient-brand-start: 231 219 249;
-  --oui-gradient-brand-end: 159 107 225;
-  --oui-gradient-brand-stop-start: 6.62%;
-  --oui-gradient-brand-stop-end: 86.5%;
-  --oui-gradient-brand-angle: 17.44deg;
+  --oui-gradient-brand-start: 245 222 199;
+  --oui-gradient-brand-end: 204 164 118;
+  --oui-gradient-brand-stop-start: 8%;
+  --oui-gradient-brand-stop-end: 88%;
+  --oui-gradient-brand-angle: 18deg;
 
-  --oui-gradient-warning-start: 152 58 8;
-  --oui-gradient-warning-end: 255 209 70;
+  --oui-gradient-warning-start: 178 133 58;
+  --oui-gradient-warning-end: 219 178 104;
 
-  --oui-gradient-neutral-start: 27 29 24;
-  --oui-gradient-neutral-end: 38 41 46;
+  --oui-gradient-neutral-start: 20 18 24;
+  --oui-gradient-neutral-end: 12 11 14;
 
   /* rounded */
   --oui-rounded-sm: 2px;
@@ -85,10 +91,17 @@
   --oui-rounded-2xl: 16px;
   --oui-rounded-full: 9999px;
 
-  /* spacing */
+  /* spacing (unchanged) */
   --oui-spacing-xs: 20rem;
   --oui-spacing-sm: 22.5rem;
   --oui-spacing-md: 26.25rem;
   --oui-spacing-lg: 30rem;
   --oui-spacing-xl: 33.75rem;
+}
+
+html, body {
+  font-family: 'Manrope', sans-serif !important;
+  font-size: 16px !important;
+  background: rgb(var(--oui-color-fill));
+  color: rgb(var(--oui-color-base-foreground));
 }
